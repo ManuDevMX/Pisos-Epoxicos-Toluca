@@ -2,7 +2,7 @@
 
 Sitio web profesional, moderno y responsivo desarrollado para la empresa **Pisos Epóxicos Toluca**, especializada en la instalación de recubrimientos industriales, comerciales y residenciales.
 
-🌐 **Demo en vivo:** [https://manudevmx.github.io/pisos-epoxicos-toluca/](https://manudevmx.github.io/pisos-epoxicos-toluca/)
+🌐 **Demo en vivo:** [https://manudevmx.github.io/Pisos-Epoxicos-Toluca/](https://manudevmx.github.io/Pisos-Epoxicos-Toluca/)
 
 ---
 
