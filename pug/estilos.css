@@ -740,3 +740,35 @@ footer p {
     #cerrar { top: 8px; right: 14px; font-size: 34px; }
     .flecha { display: none; } /* Ocultar flechas en celular (se usa touch) */
 }
+/* Contenedor del rompecabezas que cubre toda la pantalla */
+#rompecabezas-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    /* Crea una cuadrícula de 10x10 (100 piezas) */
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    z-index: 9999;
+    pointer-events: none;
+}
+
+/* Diseño de cada pieza individual */
+.pieza-rompecabezas {
+    background-color: #111; /* Color negro elegante de fondo */
+    animation: quitarPieza 0.6s ease-in forwards;
+}
+
+/* Efecto tipo PowerPoint: el cuadro se encoge, gira un poco y se esfuma */
+@keyframes quitarPieza {
+    0% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0) rotate(45deg);
+        opacity: 0;
+    }
+}

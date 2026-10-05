@@ -179,3 +179,26 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+document.addEventListener("DOMContentLoaded", () => {
+    const overlay = document.getElementById("rompecabezas-overlay");
+    if (!overlay) return;
+
+    // Crear 100 piezas para la cuadrícula
+    const totalPiezas = 100;
+    
+    for (let i = 0; i < totalPiezas; i++) {
+        let pieza = document.createElement("div");
+        pieza.classList.add("pieza-rompecabezas");
+        
+        // Retraso aleatorio entre 0 y 0.8 segundos para que se vea desordenado
+        let delay = Math.random() * 0.8;
+        pieza.style.animationDelay = `${delay}s`;
+        
+        overlay.appendChild(pieza);
+    }
+
+    // Destruir el overlay después de 1.5 segundos para que puedas hacer clic en la página
+    setTimeout(() => {
+        overlay.remove();
+    }, 1500);
+});
